@@ -1,0 +1,8 @@
+target
+.idea
+**/*.iml
+*.swp
+*.DS_Store
+~
+.m2/
+~/.m2

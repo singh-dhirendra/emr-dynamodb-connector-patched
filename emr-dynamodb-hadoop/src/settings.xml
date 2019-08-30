@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>~/.m2/</localRepository>
+  <servers>
+    <server>
+      <username>readonly</username>
+      <password>APM3bj5uu6TvLPPmJ4igKpehv2</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>readonly</username>
+      <password>APM3bj5uu6TvLPPmJ4igKpehv2</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://bin.hotels.com/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://bin.hotels.com/artifactory/libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-release</name>
+          <url>http://bin.hotels.com/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshot</name>
+          <url>http://bin.hotels.com/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+    <profile>
+      <id>coolway</id>
+      <repositories>
+        <repository>
+          <id>maven</id>
+          <name>Slowly office site</name>
+          <url>http://repo1.maven.org/maven2</url>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
+          </snapshots>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+        <repository>
+          <id>offical</id>
+          <name>Maven Official Repository</name>
+          <url>http://repo1.maven.org/maven2</url>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
+          </snapshots>
+          <releases>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <
+        </repository>
+      </repositories>
+
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!--  <activeProfile>artifactory</activeProfile> -->
+    <activeProfile>coolway</activeProfile>
+  </activeProfiles>
+</settings>
